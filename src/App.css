@@ -191,5 +191,9 @@
     width: 400px;
     justify-content: center;
     align-items: center;
+    margin-top: 300px;
+  }
+  .next {
+    margin-top: 200px;
   }
 }
