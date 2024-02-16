@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Space Grotesk;
+}
+.back {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.leftSide {
+  width: 483px;
+  background: linear-gradient(
+    rgb(144, 32, 175),
+    rgb(32, 114, 195),
+    rgba(33, 9, 47, 1)
+  );
+  height: 100vh;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 200px;
+}
+.miniCards {
+  position: absolute;
+  top: 110px;
+  height: 527px;
+  width: 541px;
+  left: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pinkCard,
+.whiteCard {
+  width: 447px;
+  height: 245px;
+  border-radius: 15px;
+}
+.pinkCard {
+  background: linear-gradient(
+    to right,
+    rgba(99, 72, 254, 1),
+    rgba(97, 5, 149, 1),
+    rgb(190, 145, 62)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 25px;
+  color: white;
+  align-items: center;
+}
+.whiteCard {
+  background: linear-gradient(rgba(210, 211, 217, 1), rgba(255, 255, 255, 1));
+  align-self: flex-end;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.numberCard {
+  width: 343px;
+  height: 36px;
+  font-size: 25px;
+  line-height: 35.73px;
+  letter-spacing: 3.42px;
+}
+.pinkMiniContainer {
+  width: 383.14px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.blackLine {
+  width: 100%;
+  height: 54px;
+  background-color: rgba(47, 47, 47, 1);
+  top: 30px;
+  position: absolute;
+}
+.greenLine {
+  background-color: rgba(173, 181, 190, 1);
+  width: 361px;
+  height: 38px;
+  position: absolute;
+  top: 120px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  padding-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.next {
+  width: 381px;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.svg {
+  background: linear-gradient(rgba(99, 72, 254, 1), rgba(97, 5, 149, 1));
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thankYou {
+  width: 381px;
+  height: 176px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.thankYou p {
+  line-height: 35.73px;
+  letter-spacing: 3.42px;
+  text-align: center;
+  font-size: 28px;
+}
+.thankYou span {
+  color: rgba(143, 134, 148, 1);
+  font-size: 18px;
+  line-height: 22.97px;
+  text-align: center;
+}
+
+.thankYou button {
+  width: 381px;
+  height: 53px;
+  border-radius: 10px;
+  background-color: rgba(33, 9, 47, 1);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .leftSide {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .rightSide {
+    justify-content: center;
+    width: 400px;
+  }
+
+  .miniCards {
+    width: 343px;
+    height: 351px;
+    top: 30px;
+    left: 10px;
+    flex-direction: column-reverse;
+    right: 100px;
+    position: absolute;
+  }
+  .pinkCard,
+  .whiteCard {
+    width: 286px;
+    height: 257px;
+  }
+
+  .whiteCard .greenLine {
+    width: 180px;
+  }
+  .numberCard {
+    width: 300px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pinkMiniContainer {
+    width: 200px;
+    font-size: 12px;
+  }
+  .card {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+}

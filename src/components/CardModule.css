@@ -1,0 +1,73 @@
+.card {
+  width: 381px;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inpLabel {
+  width: 381px;
+  min-height: 69px;
+  max-height: 92px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.confirmBtn {
+  background-color: rgba(33, 9, 47, 1);
+  width: 381px;
+  height: 53px;
+  color: white;
+  border-radius: 10px;
+}
+.inpLabel label,
+.label {
+  font-size: 12px;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+}
+.inpLabel input,
+.dates input,
+.cvc input {
+  border: 1px solid rgb(219, 212, 224);
+  border-radius: 10px;
+  width: 381px;
+  height: 45px;
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 22.97px;
+  color: rgb(160, 153, 165);
+}
+.dateYear {
+  display: flex;
+  flex-direction: column;
+}
+.cvc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.dataCvc {
+  display: flex;
+}
+.dates {
+  display: flex;
+  gap: 7px;
+  margin-top: 5px;
+}
+.dates input {
+  width: 80px;
+  height: 45px;
+}
+.cvc input,
+label {
+  width: 191px;
+  margin-left: 1px;
+}
+.inpLabel input::placeholder,
+.dates input::placeholder,
+.cvc input::placeholder {
+  color: rgb(160, 153, 165);
+}
